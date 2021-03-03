@@ -106,8 +106,8 @@ listOfTuples = [(1,2),(2,2),(3,2),(2,1),(2,2),(1,5), (10,4), (10, 1), (3, 1)]
 # sort the list so the result looks like this: [(2, 1), (3, 1), (10, 1), (1, 2), (2, 2), (2, 2), (3, 2), (10, 4), (1, 5)]
 
 def lastElm(t):
-    return t[-1]
+    return (t[-1], t[0])
 print(sorted(listOfTuples, key=lastElm))
 
 #oneliner solution 
-print(sorted(listOfTuples, key= lambda x: x[-1]))
+print(sorted(listOfTuples, key= lambda x: (x[-1], x[0])))

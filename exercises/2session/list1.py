@@ -32,10 +32,20 @@ def match_ends(words):
 # ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
-def front_x(words):
-    # +++your code here+++
-    return 
+def a_is(s):
+    if 'x' in s.lower():
+        return False
+    return True
 
+def front_x(words):
+    x = []
+    y = []
+    for s in words:
+          if 'x' == s[0]:
+               x.append(s)
+          else:
+               y.append(s)
+    return sorted(x) + sorted(y)
 
 
 # C. sort_last
@@ -48,9 +58,7 @@ def front_x(words):
 
 
 def sort_last(tuples):
-    # +++your code here+++
-    return 
-
+    return sorted(tuples, key=lambda t: t[-1:])
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
