@@ -27,7 +27,7 @@ print(l)
 
 # Ex 3: List & Tuples exercise
 
-# FÆRDIGGØR LIST EXERCISE FØRST !!!!
+
 
 # Ex 4: Sys module exercise
 
